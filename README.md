@@ -4,8 +4,8 @@
 
 # What it's useful for
 
-Either on every Push, or a fixed schedule, validate that all Repos contain a specific file. Warn in Slack
-if we discover a Repo that is missing this file.
+Either on every Push, or a fixed schedule, validate that all Repos contain a
+specific file. Warn in Slack if we discover a Repo that is missing this file.
 
 # Before you get started
 
@@ -14,26 +14,29 @@ Connect and configure these integrations:
 1. **GitHub**
 2. **Slack**
 
-Both the **GitHub** and **Slack** integrations must be configured in order to use this skill.
+Both the **GitHub** and **Slack** integrations must be configured in order to
+use this skill.
 
 # How to configure
 
 1. **Choose the name of the file that should exist**
 
-    This is a path relative to the root of each repository. All repositories should contain this file.
+    This is a path relative to the root of each repository. All repositories
+    should contain this file.
 
     ![filename](docs/images/filename.png)
 
 2. **Choose a Slack channel for notifications**
 
-    In cases where the file is missing, send a notificatio to this Slack Channel.
+    In cases where the file is missing, send a notificatio to this Slack
+    Channel.
 
     ![channel](docs/images/channel.png)
 
 3. **Optionally create a cron schedule**
 
-    Use this to configure the skill to check all of the repositories periodically, instead of
-    only on pushes to the repository.
+    Use this to configure the skill to check all of the repositories
+    periodically, instead of only on pushes to the repository.
 
     ![schedule](docs/images/schedule.png)
 
@@ -56,8 +59,7 @@ Both the **GitHub** and **Slack** integrations must be configured in order to us
 
 ---
 
-Created by [Atomist][atomist].
-Need Help? [Join our Slack workspace][slack].
+Created by [Atomist][atomist]. Need Help? [Join our Slack workspace][slack].
 
 [atomist]: https://atomist.com/ "Atomist - How Teams Deliver Software"
 [slack]: https://join.atomist.com/ "Atomist Community Slack"
