@@ -67,10 +67,15 @@ exports.handler = api.handler(
       );
     },
     OnAnyPush: async (request) => {
-      await request.withRepo(
-        eachRepo(request), 
-        {clone: true}
-      );
+      if (request.data.Push[0].branch === request.data.Push[0].repo.defaultBranch) {
+        return await request.withRepo(
+          eachRepo(request), 
+          {clone: true}
+        );
+      } else {
+        console.log("skip non-default branches")
+        return request;
+      }
     }
  }
 );
